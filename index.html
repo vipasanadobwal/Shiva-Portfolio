@@ -1,21 +1,23 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shiva Tanwar | Portfolio</title>
+<title>Shiva Tanwar | Frontend Developer</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
-
 </head>
-
 <body>
 
 <!-- LOADER -->
@@ -34,70 +36,91 @@ rel="stylesheet">
 
     <nav class="navbar">
 
-        <div class="logo">
+        <a href="#" class="logo">
             SHIVA.
-        </div>
+        </a>
 
         <ul class="nav-links">
 
-            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="#home">Home</a>
+            </li>
 
-            <li><a href="#about">About</a></li>
+            <li>
+                <a href="#about">About</a>
+            </li>
 
-            <li><a href="#education">Education</a></li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
 
-            <li><a href="#skills">Skills</a></li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
 
-            <li><a href="#experience">Experience</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#certifications">Certificates</a></li>
-
-            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
 
         </ul>
+
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
 
     </nav>
 
 </header>
 
-<!-- HERO SECTION -->
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu">
+
+    <a href="#home">Home</a>
+
+    <a href="#about">About</a>
+
+    <a href="#experience">Experience</a>
+
+    <a href="#projects">Projects</a>
+
+    <a href="#contact">Contact</a>
+
+</div>
+
+<!-- HERO -->
 
 <section class="hero" id="home">
 
     <div class="hero-content">
 
-        <p class="hero-tag">
-            BCA Student • Web Developer
-        </p>
+        <span class="hero-small">
+            FRONTEND DEVELOPER
+        </span>
 
         <h1>
-            Shiva <span>Tanwar</span>
+            Shiva Tanwar
         </h1>
 
         <h2 id="typing-text"></h2>
 
-        <p class="hero-description">
+        <p>
 
-            Passionate Web Developer focused on creating
-            responsive, interactive and modern websites
-            using HTML, CSS, JavaScript, Git and GitHub.
+            Passionate BCA student focused on building
+            modern, responsive and user-friendly web
+            experiences using HTML, CSS, JavaScript,
+            Git and GitHub.
 
         </p>
 
         <div class="hero-buttons">
 
-            <a href="#" class="btn primary-btn">
-
+            <a href="#" class="primary-btn">
                 Download Resume
-
             </a>
 
-            <a href="#contact" class="btn secondary-btn">
-
-                Contact Me
-
+            <a href="#projects" class="secondary-btn">
+                View Projects
             </a>
 
         </div>
@@ -105,6 +128,8 @@ rel="stylesheet">
     </div>
 
     <div class="hero-image">
+
+        <div class="image-glow"></div>
 
         <img src="images/profile.jpg"
              alt="Shiva Tanwar">
@@ -115,113 +140,78 @@ rel="stylesheet">
 
 <!-- ABOUT -->
 
-<section class="about section" id="about">
+<section class="about section"
+id="about">
 
-    <h2 class="section-title">
-        About Me
-    </h2>
+    <div class="section-heading">
 
-    <div class="about-container">
+        <span>ABOUT ME</span>
 
-        <p>
-
-            I am Shiva Tanwar, currently pursuing
-            Bachelor of Computer Applications (BCA)
-            from St. Wilfred's PG College.
-
-            I have a strong interest in Web Development
-            and enjoy building responsive and
-            user-friendly websites.
-
-            During my internship at Pace Infotech,
-            I gained practical experience in HTML,
-            CSS and JavaScript while working on
-            real-world projects.
-
-        </p>
+        <h2>
+            Building Websites That Solve Problems
+        </h2>
 
     </div>
 
-</section>
+    <div class="about-grid">
 
-<!-- EDUCATION -->
-
-<section class="education section" id="education">
-
-    <h2 class="section-title">
-        Education
-    </h2>
-
-    <div class="education-grid">
-
-        <div class="education-card">
+        <div class="about-card">
 
             <h3>
-                Bachelor of Computer Applications
+                Education
             </h3>
 
             <p>
+
+                BCA (2023 - Present)
+
+                <br><br>
+
                 St. Wilfred's PG College
-            </p>
 
-            <span>
-                2023 - Present
-            </span>
+            </p>
 
         </div>
 
-        <div class="education-card">
+        <div class="about-card">
 
             <h3>
-                Senior Secondary (PCM)
+                Schooling
             </h3>
 
             <p>
+
+                PCM Stream
+
+                <br><br>
+
                 IGM Public School
+
+                <br>
+
+                RBSE Board
+
             </p>
 
-            <span>
-                RBSE Board
-            </span>
-
         </div>
 
-    </div>
+        <div class="about-card">
 
-</section>
+            <h3>
+                Certification
+            </h3>
 
-<!-- SKILLS -->
+            <p>
 
-<section class="skills section" id="skills">
+                Cyber Security &
+                Ethical Hacking
 
-    <h2 class="section-title">
-        Skills
-    </h2>
+                <br><br>
 
-    <div class="skills-grid">
+                BECIL Training
 
-        <div class="skill-card">
-            HTML5
-        </div>
+            </p>
 
-        <div class="skill-card">
-            CSS3
-        </div>
-
-        <div class="skill-card">
-            JavaScript
-        </div>
-
-        <div class="skill-card">
-            Git
-        </div>
-
-        <div class="skill-card">
-            GitHub
-        </div>
-
-        <div class="skill-card">
-            Responsive Design
         </div>
 
     </div>
@@ -233,51 +223,110 @@ rel="stylesheet">
 <section class="experience section"
 id="experience">
 
-    <h2 class="section-title">
-        Experience
-    </h2>
+    <div class="section-heading">
 
-    <div class="timeline">
+        <span>EXPERIENCE</span>
 
-        <div class="timeline-item">
+        <h2>
+            Work & Internship
+        </h2>
 
-            <h3>
-                Teleperformance
-            </h3>
+    </div>
 
-            <span>
-                September 2025 - March 2026
-            </span>
+    <div class="experience-grid">
+
+        <div class="exp-card">
+
+            <div class="exp-top">
+
+                <h3>
+                    Teleperformance
+                </h3>
+
+                <span>
+                    Sep 2025 - Mar 2026
+                </span>
+
+            </div>
 
             <p>
 
-                Worked in customer service operations,
-                handling customer interactions and
-                performance-based responsibilities.
+                Worked in customer support
+                operations, handling customer
+                interactions and performance
+                based tasks.
 
             </p>
 
         </div>
 
-        <div class="timeline-item">
+        <div class="exp-card">
 
-            <h3>
-                Web Development Intern
-            </h3>
+            <div class="exp-top">
 
-            <span>
-                Pace Infotech
-                (01 Apr 2026 - 30 Apr 2026)
-            </span>
+                <h3>
+                    Pace Infotech
+                </h3>
+
+                <span>
+                    Apr 2026
+                </span>
+
+            </div>
 
             <p>
 
-                Learned HTML, CSS and JavaScript.
-                Developed practical web applications
-                and improved frontend development skills.
+                Learned HTML, CSS and JavaScript
+                while building frontend projects
+                and improving practical web
+                development skills.
 
             </p>
 
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section class="skills section">
+
+    <div class="section-heading">
+
+        <span>SKILLS</span>
+
+        <h2>
+            Technical Skills
+        </h2>
+
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-box">
+            HTML5
+        </div>
+
+        <div class="skill-box">
+            CSS3
+        </div>
+
+        <div class="skill-box">
+            JavaScript
+        </div>
+
+        <div class="skill-box">
+            Git
+        </div>
+
+        <div class="skill-box">
+            GitHub
+        </div>
+
+        <div class="skill-box">
+            Responsive Design
         </div>
 
     </div>
@@ -289,18 +338,24 @@ id="experience">
 <section class="projects section"
 id="projects">
 
-    <h2 class="section-title">
-        Projects
-    </h2>
+    <div class="section-heading">
 
-    <div class="project-grid">
+        <span>PROJECTS</span>
 
-        <!-- PROJECT 1 -->
+        <h2>
+            Featured Work
+        </h2>
+
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- Calculator -->
 
         <div class="project-card">
 
             <img src="images/calculator.jpg"
-                 alt="Calculator App">
+                 alt="Calculator">
 
             <div class="project-content">
 
@@ -310,23 +365,29 @@ id="projects">
 
                 <p>
 
-                    A responsive calculator developed
-                    using HTML, CSS and JavaScript.
+                    Responsive calculator
+                    developed using HTML,
+                    CSS and JavaScript.
 
                 </p>
 
-                <a href="calculator.html"
-                   class="project-btn">
+                <div class="project-links">
 
-                    View Project
+                    <a href="calculator.html">
+                        Live Demo
+                    </a>
 
-                </a>
+                    <a href="#">
+                        GitHub
+                    </a>
+
+                </div>
 
             </div>
 
         </div>
 
-        <!-- PROJECT 2 -->
+        <!-- Todo -->
 
         <div class="project-card">
 
@@ -341,51 +402,25 @@ id="projects">
 
                 <p>
 
-                    Task management application with
-                    add, delete and update functionality.
+                    Task management web
+                    application built using
+                    JavaScript.
 
                 </p>
 
-                <a href="todo.html"
-                   class="project-btn">
+                <div class="project-links">
 
-                    View Project
+                    <a href="todo.html">
+                        Live Demo
+                    </a>
 
-                </a>
+                    <a href="#">
+                        GitHub
+                    </a>
+
+                </div>
 
             </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CERTIFICATIONS -->
-
-<section class="certifications section"
-id="certifications">
-
-    <h2 class="section-title">
-        Certifications
-    </h2>
-
-    <div class="certificate-grid">
-
-        <div class="certificate-card">
-
-            <h3>
-
-                Cyber Security &
-                Ethical Hacking Training
-
-            </h3>
-
-            <p>
-
-                BECIL Training
-
-            </p>
 
         </div>
 
@@ -398,55 +433,52 @@ id="certifications">
 <section class="contact section"
 id="contact">
 
-    <h2 class="section-title">
-        Contact Me
-    </h2>
+    <div class="section-heading">
 
-    <div class="contact-box">
+        <span>CONTACT</span>
+
+        <h2>
+            Let's Connect
+        </h2>
+
+    </div>
+
+    <div class="contact-card">
+
+        <h3>
+            Available For Opportunities
+        </h3>
 
         <p>
 
-            <i class="fas fa-phone"></i>
-
+            Phone:
             +91 99285 19981
 
         </p>
 
         <p>
 
-            <i class="fas fa-envelope"></i>
-
+            Email:
             your-email@example.com
 
         </p>
 
         <div class="social-icons">
 
-            <a href="https://github.com/"
-               target="_blank">
-
+            <a href="https://github.com/">
                 <i class="fab fa-github"></i>
-
             </a>
 
-            <a href="https://linkedin.com/"
-               target="_blank">
-
+            <a href="https://linkedin.com/">
                 <i class="fab fa-linkedin-in"></i>
-
             </a>
 
-            <a href="https://instagram.com/"
-               target="_blank">
-
+            <a href="https://instagram.com/">
                 <i class="fab fa-instagram"></i>
-
             </a>
 
             <a href="mailto:your-email@example.com">
-
                 <i class="fas fa-envelope"></i>
-
             </a>
 
         </div>
@@ -459,12 +491,40 @@ id="contact">
 
 <footer>
 
-    <p>
+    <div class="footer-content">
 
-        © 2026 Shiva Tanwar.
-        All Rights Reserved.
+        <h3>
+            Shiva Tanwar
+        </h3>
 
-    </p>
+        <p>
+            Frontend Developer
+        </p>
+
+        <div class="footer-socials">
+
+            <a href="#">
+                GitHub
+            </a>
+
+            <a href="#">
+                LinkedIn
+            </a>
+
+            <a href="#">
+                Email
+            </a>
+
+        </div>
+
+        <span>
+
+            © 2026 Shiva Tanwar.
+            All Rights Reserved.
+
+        </span>
+
+    </div>
 
 </footer>
 
@@ -472,3 +532,4 @@ id="contact">
 
 </body>
 </html>
+```
